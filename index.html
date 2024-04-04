@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Trainer Website</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 
@@ -14,16 +13,20 @@
     <div class="background-container"></div>
     <div class="spill"></div>
     <nav class="navbar">
-        <div class="container">
-            <a href="#" class="navbar-brand">INVICTUS</a>
-            <ul class="navbar-nav">
-                <li><a href="#about">About</a></li>
-                <li><a href="#testimonials">Testimonials</a></li>
-                <li><a href="#pricing">Pricing</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
+      <div class="container">
+        <a href="#" class="navbar-brand">INVICTUS</a>
+        <button class="navbar-toggler">
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul class="navbar-nav">
+          <li><a href="#about">About</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
     </nav>
+    
 
 
     <section class="hero">
@@ -55,7 +58,8 @@
             <div class="about-images" loading="lazy">
                 <img src="/images/coach1.jpg" alt="First Image Description" class="about-image">
                 <img src="/images/coach2.jpg" alt="Second Image Description" class="about-image">
-              </div>
+                <img src="/images/coach3.jpg" alt="Third Image Description" class="about-image">
+            </div>
         </div>
     </section>
 
@@ -236,9 +240,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="main.js"></script>
-    <script src="swiper.js"></script>
 </body>
 
 </html>

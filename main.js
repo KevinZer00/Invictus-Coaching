@@ -132,6 +132,47 @@ gsap.from('.cta-container > *', { // Select all direct children of '.cta-contain
 });
 
 
+document.querySelector('.navbar-toggler').addEventListener('click', function() {
+  this.classList.toggle('active');
+  document.querySelector('.navbar-nav').classList.toggle('expanded');
+
+  // Toggle between burger icon and X icon
+  if (this.classList.contains('active')) {
+    this.innerHTML = '<i class="fas fa-times"></i>';
+  } else {
+    this.innerHTML = '<i class="fas fa-bars"></i>';
+  }
+});
+
+// Get the elements
+const navLinks = document.querySelectorAll('.navbar-nav a');
+const navbarNav = document.querySelector('.navbar-nav');
+const navbarToggler = document.querySelector('.navbar-toggler');
+
+// Function to close the menu after navigating
+navLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    // Close the menu
+    navbarNav.classList.remove('expanded');
+    // Change the toggler icon back to the hamburger menu
+    navbarToggler.innerHTML = '<i class="fas fa-bars"></i>';
+    // Remove the 'active' class from the toggler
+    navbarToggler.classList.remove('active');
+  });
+});
+
+// Function to close the menu when scrolling
+window.addEventListener('scroll', () => {
+  navbarNav.style.opacity = '0'; // Start the fade-out animation
+  setTimeout(() => {
+    navbarNav.classList.remove('expanded');
+    navbarToggler.classList.remove('active');
+    navbarToggler.innerHTML = '<i class="fas fa-bars"></i>';
+    navbarNav.style.opacity = ''; // Reset the opacity for the next time the menu is opened
+  }, 500); // Match the duration with the CSS transition duration
+});
+
+
 
 
 
