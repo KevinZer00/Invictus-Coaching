@@ -172,6 +172,15 @@ window.addEventListener('scroll', () => {
   }, 500); // Match the duration with the CSS transition duration
 });
 
+document.querySelectorAll('.faq-question').forEach(item => {
+  item.addEventListener('click', () => {
+    item.classList.toggle('active'); // Toggle the active class
+    item.nextElementSibling.style.display = item.nextElementSibling.style.display === 'block' ? 'none' : 'block'; // Toggle the answer
+    item.querySelector('.faq-toggle').textContent = item.classList.contains('active') ? '-' : '+'; // Toggle the plus/minus sign
+  });
+});
+
+
 
 
 

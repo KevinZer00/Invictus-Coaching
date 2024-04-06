@@ -292,7 +292,7 @@ html {
 
 .testimonial-img {
   width: 100%;
-  height: auto;
+  height: 350px;
   border-radius: 10px; 
 }
 
@@ -457,11 +457,74 @@ html {
   color: black;
 }
 
+.faq-section {
+  background: black;
+  color: #fff;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.faq-container {
+  max-width: 800px;
+  margin: auto;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: red;
+  margin-bottom: 30px;
+}
+
+.faq-item {
+  margin-bottom: 20px;
+}
+
+.faq-question {
+  background: transparent;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 8px;
+  color: #fff;
+  font-size: 1.5rem;
+  max-width: 70vw;
+  margin: auto;
+  width: auto;
+  text-align: left;
+  padding: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.faq-toggle {
+  float: right; /* Position the toggle to the right */
+  font-weight: bold;
+}
+
+/* Style for when the answer is shown */
+.faq-question.active .faq-toggle {
+  content: '-'; /* Change to minus sign */
+}
+
+
+.faq-question:hover {
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+
+.faq-answer {
+  display: none;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: left;
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+
 
 .cta-section {
   height: 50vh;
   color: #fff;
-  padding: 50px 0; 
+  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -605,6 +668,12 @@ background-size: cover;
     width: 100%;
   }
   
+
+  .faq-answer {
+    max-width: 70vw;
+  }
+
+  
 }
 
 @media (min-width: 750px) and (max-width: 999px) {
@@ -643,6 +712,17 @@ background-size: cover;
   .pricing-cards {
     grid-template-columns: repeat(2, 2fr);
   }
+
+  .faq-question {
+    font-size: 1.2rem;
+  }
+
+  .faq-answer {
+    max-width: 70vw;
+    margin: auto;
+    font-size: 1rem;
+  }
+  
   
 }
   
@@ -725,6 +805,16 @@ background-size: cover;
     grid-template-columns: repeat(1, 3fr);
   }
 
+  .faq-question {
+    font-size: 1rem;
+  }
+
+  .faq-answer {
+    max-width: 70vw;
+    margin: auto;
+    font-size: 1rem;
+  }
+  
   .cta-section {
     width: 80vw;
     margin: auto;
@@ -852,6 +942,17 @@ background-size: cover;
   .pricing-cards {
     grid-template-columns: repeat(1, 3fr);
   }
+
+  .faq-question {
+    font-size: 1rem;
+  }
+
+  .faq-answer {
+    max-width: 70vw;
+    margin: auto;
+    font-size: 1rem;
+  }
+  
 
   .cta-section {
     width: 80vw;
