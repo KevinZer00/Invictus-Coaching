@@ -22,7 +22,7 @@ function enableScroll() {
   function initModal(buttonId, modalId) {
     var modal = document.getElementById(modalId);
     var btn = document.getElementById(buttonId);
-    var span = modal.querySelector(".close"); // Assuming you have one close button per modal
+    var span = modal.querySelector(".close"); 
   
     // Open the modal and prevent background scrolling
     btn.onclick = function() {

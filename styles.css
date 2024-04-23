@@ -168,6 +168,7 @@ html {
 }
 
 .hero-content h1 {
+  padding-top: 5em;
   font-size: 5rem;
   color: red;
   text-transform: uppercase;
@@ -264,7 +265,7 @@ html {
 
 
 .testimonial-grid {
-  background-color: #000; 
+  background-color: black;
   color: #fff;
   padding: 50px 0;
   text-align: center;
@@ -330,8 +331,8 @@ html {
 
 .pricing-cards {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); 
-  gap: 20px; 
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 50px; 
   justify-items: center; 
   align-items: center;
 }
@@ -339,7 +340,7 @@ html {
 
 .pricing-card-container {
   position: relative;
-  width: 300px;
+  width: 400px;
   height: auto;
   display: flex;
   justify-content: center;
@@ -522,48 +523,82 @@ html {
 
 
 .cta-section {
-  height: 50vh;
-  color: #fff;
-  
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
+  padding: 2rem;
 }
 
 .cta-container {
-  max-width: 800px; 
-  margin: 0 auto; 
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .cta-title {
-  font-size: 2.5rem; 
-  color: red;
-  margin-bottom: 20px; 
+  margin-bottom: 1rem;
+  font-size: 2rem;
 }
 
 .cta-text {
-  font-size: 1.2rem; 
-  line-height: 1.6;
-  margin-bottom: 30px;
+  margin-bottom: 2rem;
+}
+
+.input-group {
+  margin-bottom: 1rem;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: .5rem;
+}
+
+.input-group input,
+.input-group textarea {
+  width: 100%;
+  padding: .5rem;
+  border: 1px solid #ddd;
+  border-radius: .25rem;
 }
 
 .cta-button {
-  background-color: white;
+  background: #000;
+  color: #fff;
   border: none;
-  padding: 15px 30px;
-  font-size: 1.2rem; 
-  cursor: pointer; 
-  transition: background-color 0.3s ease; 
-  border-radius: 5px; 
+  padding: 1rem 2rem;
   text-transform: uppercase;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  display: inline-block;
+  margin-top: 1rem;
 }
 
-.cta-button:hover {
-  background-color: red;
+
+/* Modal styles */
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
 }
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  width: 80%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.close-button {
+  float: right;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
 
 
 

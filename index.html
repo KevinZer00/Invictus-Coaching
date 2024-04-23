@@ -245,27 +245,36 @@
 
   <section class="cta-section" id="contact">
     <div class="cta-container">
-      <h2 class="cta-title">Ready to Transform Your Body?</h2>
-      <p class="cta-text">Join us today and start your journey to a healthier, stronger you.</p>
-      <form class="cta-form" name="contact" method="POST" data-netlify="true">
-        <input type="hidden" name="form-name" value="contact" />
-        <div class="input-group">
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" required>
-        </div>
-        <div class="input-group">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" required>
-        </div>
-        <div class="input-group">
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="4" required></textarea>
-        </div>
-        <button type="submit" class="cta-button">SEND A MESSAGE</button>
-      </form>
+        <h2 class="cta-title">Ready to Transform Your Body?</h2>
+        <p class="cta-text">Join us today and start your journey to a healthier, stronger you.</p>
+        <form class="cta-form" name="contact" method="POST" data-netlify="true">
+            <input type="hidden" name="form-name" value="contact" />
+            <div class="input-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="input-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="cta-button">SEND A MESSAGE</button>
+        </form>
     </div>
-  </section>
-  
+</section>
+
+<!-- Modal Structure -->
+<div id="successModal" class="modal" style="display: none;">
+    <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <h1>Thank You!</h1>
+        <p>Your form has been successfully submitted.</p>
+    </div>
+</div>
+
   
 
 
