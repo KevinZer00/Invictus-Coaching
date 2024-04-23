@@ -6,11 +6,25 @@ document.addEventListener('DOMContentLoaded', function () {
     form.addEventListener('submit', function (e) {
         e.preventDefault(); // Prevent the default form submission
         modal.style.display = 'flex'; // Show the modal
-        
-        // Submit the form after showing the modal
-        setTimeout(function() {
-            form.submit();
-        }, 1000); // Adjust the timeout as needed
+
+        var formData = new FormData(form);
+
+        fetch('/', {
+            method: 'POST',
+            headers: {
+                'Accept': 'application/x-www-form-urlencoded;charset=UTF-8',
+                'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'
+            },
+            body: new URLSearchParams(formData).toString()
+        }).then(response => {
+            if (response.ok) {
+                console.log('Form successfully submitted to Netlify');
+            } else {
+                console.log('Network response was not ok.');
+            }
+        }).catch(error => {
+            console.error('There has been a problem with your fetch operation:', error);
+        });
     });
 
     closeButton.addEventListener('click', function () {
