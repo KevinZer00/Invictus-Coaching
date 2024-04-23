@@ -19,6 +19,8 @@ document.addEventListener('DOMContentLoaded', function () {
         }).then(response => {
             if (response.ok) {
                 console.log('Form successfully submitted to Netlify');
+                form.reset(); // Clears the form fields after successful submission
+                setTimeout(() => { modal.style.display = 'none'; }, 2000); // Optionally hide the modal after some time
             } else {
                 console.log('Network response was not ok.');
             }
