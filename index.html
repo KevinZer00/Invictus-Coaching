@@ -5,9 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Personal Trainer Website</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles2.css">
   <link rel="stylesheet" href="modals.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"/>
 </head>
 
 <body>
@@ -43,20 +45,23 @@
     <div class="about-container">
       <div class="about-content">
         <h2>Meet Your Coach</h2>
-        <p>I am a certified personal trainer with a unique range of skills. Over the years, my experience as a personal trainer
-          and physical education teacher has refined my skillset. This subsequently lead to a plethora of client transformations.
+        <p>I am a certified personal trainer with a unique range of skills. Over the years, my experience as a personal
+          trainer
+          and physical education teacher has refined my skillset. This subsequently lead to a plethora of client
+          transformations.
         </p>
-        <p>My extensive knowledge with nutrition, anatomy, and bodybuilding has equipped me with the tools to help 
-          any body no matter the starting port nor any limitations in our way. 
+        <p>My extensive knowledge with nutrition, anatomy, and bodybuilding has equipped me with the tools to help
+          any body no matter the starting port nor any limitations in our way.
         </p>
-        <p>Help me help you reach your fitness goals and together we will create a better you with newfound confidence, a more sustainable 
+        <p>Help me help you reach your fitness goals and together we will create a better you with newfound confidence,
+          a more sustainable
           lifesyle, and a new understanding of just how limitless your potential is.
         </p>
       </div>
-      <div class="about-images" loading="lazy">
-        <img src="/images/coach1.jpg" alt="First Image Description" class="about-image">
-        <img src="/images/coach2.jpg" alt="Second Image Description" class="about-image">
-        <img src="/images/coach3.jpg" alt="Third Image Description" class="about-image">
+      <div class="about-images">
+        <img src="/images/coach1.jpg" alt="First Image Description" class="about-image" loading="lazy">
+        <img src="/images/coach2.jpg" alt="Second Image Description" class="about-image" loading="lazy">
+        <img src="/images/coach3.jpg" alt="Third Image Description" class="about-image" loading="lazy">
       </div>
     </div>
   </section>
@@ -78,7 +83,8 @@
       <div class="testimonial-item">
         <img src="/images/client1.jpg" alt="Client 1" class="testimonial-img" loading="lazy">
         <p class="client-name">Vincent</p>
-        <p class="testimonial-quote">"Simultaneously gained 20 pounds of muscle and decreased bodyfat from 20% to 15%"</p>
+        <p class="testimonial-quote">"Simultaneously gained 20 pounds of muscle and decreased bodyfat from 20% to 15%"
+        </p>
       </div>
       <div class="testimonial-item">
         <img src="/images/client2.jpg" alt="Client 2" class="testimonial-img" loading="lazy">
@@ -106,8 +112,6 @@
         <p class="testimonial-quote">"Gained 15 pounds of muscle with a decrease of 3% bodyfat"</p>
       </div>
     </div>
-    </div>
-    </div>
   </section>
 
 
@@ -129,7 +133,13 @@
               <li>Monthly Calls</li>
               <li>Discounted In-Person Training</li>
             </ul>
-            <button button id="learnMoreStandard" class="btn-order">SCHEDULE CONSULTATION</button>
+            <button button id="learnMoreStandard" class="btn-order">
+              <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+              <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+              <a href=""
+                onclick="Calendly.initPopupWidget({url: 'https://calendly.com/kevinyuzer0/phone-consultation-1'});return false;">SCHEDULE
+                CONSULTATION</a>
+            </button>
           </div>
         </div>
 
@@ -146,7 +156,13 @@
               <li>24/7 Gym Access</li>
               <li>Free Fitness Assessment</li>
             </ul>
-            <button button id="learnMoreProfessional" class="btn-order">SCHEDULE CONSULTATION</button>
+            <button button id="learnMoreProfessional" class="btn-order">
+              <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+              <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+              <a href=""
+                onclick="Calendly.initPopupWidget({url: 'https://calendly.com/kevinyuzer0/phone-consultation-1'});return false;">SCHEDULE
+                CONSULTATION</a>
+            </button>
           </div>
         </div>
 
@@ -156,126 +172,73 @@
   </section>
 
 
-  <div id="standardModal" class="modal">
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      <h2>Standard Plan Details</h2>
-      <p>The Standard Plan is designed for those new to fitness or who prefer a steady approach to their fitness journey. It offfers an introduction to nutrition and training.</p>
-      <ul>
-        <li><strong>Access to Basic Workout Plans:</strong> Start your fitness journey with a variety of foundational workout routines that cover all body parts and are designed for balanced development.</li>
-        <li><strong>2 Personal Training Sessions per Month:</strong> Receive personalized attention and coaching twice a month to ensure you are on the right track and performing exercises correctly.</li>
-        <li><strong>Use of Gym Facilities:</strong> Enjoy full access to our state-of-the-art gym facilities, including cardio equipment, weight machines, and free weights during staffed hours.</li>
-        <li><strong>10% Discount on Supplements:</strong> Benefit from a 10% discount on high-quality nutritional supplements available at our facility to support your health and fitness goals.</li>
-        <li><strong>Monthly Fitness Assessments:</strong> Track your progress with monthly assessments that include body measurements, fitness tests, and personalized feedback.</li>
-        <li><strong>Access to Member-Only Events:</strong> Take part in exclusive events such as seminars, workshops, and social gatherings, which are reserved for members only.</li>
-        <li><strong>Standard Support Response:</strong> Have your general inquiries answered within a standard timeframe, ensuring you have the support you need when you need it.</li>
-        <li><strong>Weekly Newsletter:</strong> Stay informed and motivated with our weekly newsletter featuring fitness tips, nutritional advice, and the latest gym updates.</li>
-      </ul>
-    </div>
-  </div>
-  
-
-  <div id="professionalModal" class="modal">
-
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      <h2>Professional Plan Details</h2>
-      <p>The Professional Plan is designed for those that consider themselves at the intermediate fitness level. It offers more comprehensive nutritional and training protocols. </p>
-      <ul>
-        <li><strong>Customized Workout Plans:</strong> Experience workouts tailored to your individual goals and preferences, evolving with your progress for continued improvement.</li>
-        <li><strong>5 Personal Training Sessions per Month:</strong> Enhance your routine with five expert-led training sessions each month, focusing on advanced techniques for optimal results.</li>
-        <li><strong>Nutritional Guidance and Meal Planning:</strong> Collaborate with nutrition experts to craft a meal plan that complements your workout regimen and dietary needs.</li>
-        <li><strong>15% Discount on Supplements and Gear:</strong> Enjoy exclusive savings on our premium range of supplements and fitness gear to boost your performance and recovery.</li>
-        <li><strong>Bi-Weekly Fitness Assessments:</strong> Keep track of your fitness journey with detailed bi-weekly assessments to measure progress and fine-tune your program.</li>
-        <li><strong>Priority Booking for Classes:</strong> Secure your spot in high-demand classes with priority booking, ensuring you never miss your favorite sessions.</li>
-        <li><strong>Access to Advanced Classes:</strong> Challenge yourself with access to advanced-level classes, designed to push your limits and enhance your abilities.</li>
-        <li><strong>24/7 Gym Access:</strong> Enjoy the flexibility to train at your convenience with around-the-clock access to the gym, fitting your fitness into any schedule.</li>
-        <li><strong>Priority Support Response:</strong> Receive prompt and attentive service for all your inquiries, giving you the timely assistance you need.</li>
-      </ul>      
-    </div>
-  </div>
-
-  <div id="masterModal" class="modal">
-
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      <h2>Master Plan Details</h2>
-      <p>The Master Plan is designed for those that are experienced in their fitness level and wish to compete. It offers aggressive nutritional and training protocols to prepare the individual for contests.</p>
-      <ul>
-        <li><strong>All-Access Workout Plans:</strong> Gain unlimited access to a wide range of workout plans, each designed to target different fitness goals and preferences.</li>
-        <li><strong>Unlimited Personal Training Sessions:</strong> Benefit from unlimited one-on-one sessions with our certified trainers, providing personalized guidance every step of the way.</li>
-        <li><strong>Full Nutritional Program with Custom Meals:</strong> Receive a comprehensive nutritional program, including custom meal plans tailored to your specific dietary requirements and fitness objectives.</li>
-        <li><strong>20% Discount on All Products and Services:</strong> Enjoy an exclusive 20% discount on all products and services offered at our facility, including merchandise, supplements, and additional classes.</li>
-        <li><strong>Weekly One-on-One Fitness Assessments:</strong> Stay on track with weekly personal assessments to monitor your progress, adjust your plan, and set new goals.</li>
-        <li><strong>Complimentary Massage and Spa Services:</strong> Relax and rejuvenate with complimentary access to our massage and spa services, helping you recover and unwind after your workouts.</li>
-        <li><strong>Dedicated Support and Consultation:</strong> Receive dedicated support and consultation from our team, ensuring you have expert advice and assistance whenever needed.</li>
-      </ul>      
-    </div>
-  </div>
-
   <section class="faq-section" id="faq">
     <div class="faq-container">
       <h2 class="section-title">Frequently Asked Questions</h2>
       <div class="faq-item">
         <div class="faq-question">What is the cancellation policy? <span class="faq-toggle">+</span></div>
-        <div class="faq-answer">You can cancel your membership at any time with a 30-day notice. No cancellation fees apply.</div>
+        <div class="faq-answer">You can cancel your membership at any time with a 30-day notice. No cancellation fees
+          apply.</div>
       </div>
       <div class="faq-item">
         <div class="faq-question">Do you offer group fitness classes? <span class="faq-toggle">+</span></div>
-        <div class="faq-answer">Yes, we offer group sessions (up to 3 people at a time) at a discounted rate. Schedule 
+        <div class="faq-answer">Yes, we offer group sessions (up to 3 people at a time) at a discounted rate. Schedule
           a consultation to find out pricing.
         </div>
       </div>
       <div class="faq-item">
         <div class="faq-question">Can I pause my membership? <span class="faq-toggle">+</span></div>
-        <div class="faq-answer">Yes, you can pause your membership for a minimum of one month and a maximum of six months. A pause fee may apply.</div>
+        <div class="faq-answer">Yes, you can pause your membership for a minimum of one month and a maximum of six
+          months. A pause fee may apply.</div>
       </div>
       <div class="faq-item">
         <div class="faq-question">Where is the gym located at? <span class="faq-toggle">+</span></div>
-        <div class="faq-answer">In-person coaching is offered at "The Gym Fitness Center" located at 9844 Business Park Dr unit f, Sacramento, CA 95827 </div>
+        <div class="faq-answer">In-person coaching is offered at "The Gym Fitness Center" located at 9844 Business Park
+          Dr unit f, Sacramento, CA 95827 </div>
       </div>
       <div class="faq-item">
         <div class="faq-question">How does the pricing work? <span class="faq-toggle">+</span></div>
-        <div class="faq-answer">Pricing is dependent on a multitude of factors. Schedule a consultation to learn more.</div>
+        <div class="faq-answer">Pricing is dependent on a multitude of factors. Schedule a consultation to learn more.
+        </div>
       </div>
-      
+
     </div>
   </section>
-  
+
 
   <section class="cta-section" id="contact">
     <div class="cta-container">
-        <h2 class="cta-title">Ready to Transform Your Body?</h2>
-        <p class="cta-text">Join us today and start your journey to a healthier, stronger you.</p>
-        <form class="cta-form" name="contact" method="POST" data-netlify="true">
-            <input type="hidden" name="form-name" value="contact" />
-            <div class="input-group">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" required>
-            </div>
-            <div class="input-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="input-group">
-                <label for="message">Message</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-            </div>
-            <button type="submit" class="cta-button">SEND A MESSAGE</button>
-        </form>
+      <h2 class="cta-title">Ready to Transform Your Body?</h2>
+      <p class="cta-text">Join us today and start your journey to a healthier, stronger you.</p>
+      <form class="cta-form" name="contact" method="POST" data-netlify="true">
+        <input type="hidden" name="form-name" value="contact" />
+        <div class="input-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="input-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="input-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="cta-button">SEND A MESSAGE</button>
+      </form>
     </div>
-</section>
+  </section>
 
-<!-- Modal Structure -->
-<div id="successModal" class="modal" style="display: none;">
+  <!-- Modal Structure -->
+  <div id="successModal" class="modal" style="display: none;">
     <div class="modal-content">
-        <span class="close-button">&times;</span>
-        <h1>Thank You!</h1>
-        <p>Your form has been successfully submitted.</p>
+      <h1>Thank You!</h1>
+      <p>Your form has been successfully submitted. We will get back to you within 24 hours.</p>
+      <button class="modal-close">CLOSE</button>
     </div>
-</div>
+  </div>
 
-  
+
 
 
 
@@ -325,9 +288,11 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
   <script src="main.js"></script>
+  <script src="swiper.js"></script>
   <script src="email.js"></script>
-  <script src="modals.js"></script>
 </body>
 
 </html>

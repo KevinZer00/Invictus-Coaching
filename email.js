@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
     var form = document.querySelector('form');
     var modal = document.getElementById('successModal');
-    var closeButton = document.querySelector('.close-button');
+    var closeButton = document.querySelector('.modal-close');
 
     form.addEventListener('submit', function (e) {
         e.preventDefault(); // Prevent the default form submission
