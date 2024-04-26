@@ -12,7 +12,7 @@ $(document).ready(function() {
         dots: true, 
         arrows: false,
         draggable: true,
-        variableWidth: false,
+        lazyLoad: 'ondemand',
         responsive: [
           {
             breakpoint: 450,
@@ -36,9 +36,8 @@ $(document).ready(function() {
   // Initial check
   initSlick();
 
-  // Check on resize
-  $(window).on('resize', function() {
-    initSlick();
-    destroySlick();
+  $(window).on('load', function() {
+    $('.grid-container').slick('setPosition');
   });
+  
 });
